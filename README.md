@@ -1,1 +1,3 @@
 # putchar
+
+I was very happy with my putchar_for_embeded_systems, until some guys from passport control started asking me difficult questions....
