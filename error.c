@@ -1,6 +1,5 @@
 #include "ft_putchar.h"
 
-
 static size_t ft_strlen(const char *s)
 {
     size_t i = 0;
@@ -8,30 +7,6 @@ static size_t ft_strlen(const char *s)
         i++;
     return (i);
 }
-
-// int	main(int argc, char **argv)
-// {
-// 	t_data		data;
-// 	t_error		exit_code;
-
-// 	if (argc < 5 || argc > 6)
-// 		return (ret_error(E_ARGS, NULL));
-// 	if (check_input(argv))
-// 		return (ret_error(E_ARGS, NULL));
-// 	if (check_args(&data, argv))
-// 		return (ret_error(E_ARGS, &data));
-// 	if (to_malloc(&data))
-// 		return (ret_error(E_MALLOC, &data));
-// 	if (init_mutexes(&data))
-// 		return (ret_error(E_MUTEX, &data));
-// 	if (init_philos(&data))
-// 		return (ret_error(E_THREAD, &data));
-// 	exit_code = start_threads(&data);
-// 	if (exit_code != NO_ERROR)
-// 		return (exit_code);
-// 	return (ret_error(NO_ERROR, &data));
-// }
-
 
 static char	*ft_strerror(t_error error)
 {
@@ -46,15 +21,6 @@ static char	*ft_strerror(t_error error)
 
 int	return_error(t_error error)
 {
-	// if (l)
-	// {
-	// 	// if (l->s)
-	// 	// 	free(l->s);
-	// 	// if (l->rgb.b)
-	// 	// 	free(l->rgb.b);
-	// 	// if (l)
-	// 		free(l);
-	// }
 	if (error != E_SUCCESS)
 	{
 		write(2, "Error: ", 7);
